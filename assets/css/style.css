@@ -1,0 +1,12 @@
+h1 {
+   text-transform: capitalize;
+}
+span {
+   color: red;
+}
+
+#container {
+   background: gray;
+   width: 360px;
+   margin: 0 auto;
+}
