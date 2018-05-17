@@ -1,12 +1,79 @@
-h1 {
-   text-transform: capitalize;
+* {
+   margin: 0; padding: 0; list-style: none;
 }
-span {
-   color: red;
+
+body {
+   font-family: 'Roboto';
+   background: #4DA0B0;  /* fallback for old browsers */background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #container {
-   background: gray;
+   margin: 100px auto 0;
    width: 360px;
-   margin: 0 auto;
+   background: #f7f7f7;
+   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+   padding: 10px 20px;
+   color: #fff;
+   background-color: #2980b9;
+   font-style: 24px;
+   font-weight: normal;
+   text-transform: uppercase;
+}
+
+.fa-plus {
+   float: right;
+   cursor: pointer;
+}
+
+input {
+   width: 100%;
+   padding: 13px 13px 13px 20px;
+   font-style: 18px;
+   color: #2980b9;
+   background-color: #f7f7f7;
+   border: 2px solid rgba(0, 0, 0, 0);
+   box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+
+input:focus {
+   background: #fff;
+   border: 2px solid #2980b9;
+   border-top: none;
+}
+
+li {
+   color: #666;
+   line-height: 40px;
+   height: 40px;
+   background-color: #fff;
+   cursor: pointer;
+}
+
+li:nth-child(2n) {
+   background-color: #f7f7f7;
+}
+
+span {
+   display: inline-block;
+   text-align: center;
+   margin-right: 20px;
+   width: 0;
+   height: 40px;
+   color: #fff;
+   background-color: #e74c3c;
+   transition: 0.2s linear;
+   opacity: 0;
+}
+
+li:hover span {
+   opacity: 1.0;
+   width: 40px;
+}
+
+.compleated {
+   text-decoration: line-through;
+   color: gray;
 }
